@@ -8,19 +8,28 @@
 </head>
 <style>
     * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    body{
+
+    body {
         width: 100vw;
         height: 100vh;
-       
+
     }
-    .media{
-         display: flex;
+
+    .media {
+        display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
+        width: 100%;
+        border: 2px solid red;
+    }
+
+    video {
+        border: 3px solid green;
         height: 100%;
         width: 100%;
     }
@@ -37,7 +46,13 @@
         <audio src=""></audio>
     </div> -->
 
-    
+    <!-- lec03 -> Adding Video -->
+    <div class="media">
+        <video controls autoplay muted loop height="300px" width="250px">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+    </div>
 </body>
 
 </html>
